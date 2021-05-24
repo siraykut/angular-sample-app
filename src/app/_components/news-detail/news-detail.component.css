@@ -1,0 +1,31 @@
+.detail-container{
+  width: 60%;
+  padding: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  height: auto;
+  background-color: #f8f9fa;
+  min-height: 100%;
+}
+.detail-container h2{
+  text-align: center;
+  font-family: "Gloucester MT Extra Condensed";
+  font-size: 2rem;
+}
+.detail-container p{
+  font-family: "Bell MT";
+  font-size: 1.3rem;
+  line-height: 25px;
+}
+.comment-container{
+  width: 60%;
+  padding: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  height: auto;
+  background-color: #f8f9fa;
+}
+.detail-text{
+  font-family: "Lucida Bright";
+  font-size: 1.2rem;
+}

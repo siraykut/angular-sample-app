@@ -1,1 +1,32 @@
-<p>comments works!</p>
+
+<form  #commentForm="ngForm"  (ngSubmit)="saveCommand(commentForm)">
+
+  <table width="100%">
+    <tr>
+      <td>
+        <span class="comment-header">Comment Form</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="text" name="txtEmail" id="txtEmail" width="500px" [(ngModel)]="model.Email" >
+      </td>
+    </tr>
+    <tr>
+      <td><textarea type="text"  name="txtCommentText" id="txtCommentText" [(ngModel)]="model.Comment" ></textarea></td>
+    </tr>
+    <tr>
+      <td>
+        <input type="submit" value="Save Comment" >
+      </td>
+    </tr>
+  </table>
+</form>
+
+  <div class="" *ngFor="let comment of commentList">
+    <h4 class="comment-header">{{comment.Email}}</h4>
+    <p class="comment-text">{{comment.Comment}}</p>
+  </div>
+
+
+

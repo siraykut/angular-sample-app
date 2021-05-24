@@ -1,1 +1,10 @@
-<p>news-list works!</p>
+<ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "square-loader" [fullScreen] = "true"><p style="color: white" > Loading... </p></ngx-spinner>
+
+<div class="component-container">
+  <h2>News Summaries</h2>
+  <div class="news" *ngFor="let newsSummary of newsSummaries">
+    <span class="Number">{{newsSummary.Id}}</span>
+    <a class="title-link" [routerLink]="['/News',newsSummary.Id]" ><h4>{{newsSummary.Title}}</h4></a>
+    <p>{{newsSummary.NewsSummary}}</p>
+  </div>
+</div>

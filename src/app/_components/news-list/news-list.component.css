@@ -1,0 +1,52 @@
+.component-container{
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.news{
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f8f9fa;
+}
+.news> h4{
+  font-size: 1.2rem;
+  font-family: "Gloucester MT Extra Condensed";
+}
+
+.news> p{
+  font-family: Arial;
+  font-size: 1rem;
+  line-height: 22px;
+}
+h2{
+  font-family: "Gloucester MT Extra Condensed";
+  font-size: 2.8rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.Number{
+  font-family: "Lucida Bright";
+  font-size: 6rem;
+  font-weight: bolder;
+  float: left;
+  padding: 40px 30px 30px 10px;
+  margin-right: 20px;
+  border-right: black 2px solid;
+}
+.Number:hover{
+  color: brown;
+}
+.title-link:link {
+  font-family: Tahoma;
+  font-size: 1.4em;
+  font-weight: bolder;
+  text-decoration: none;
+  color: black;
+}
+.title-link:hover{
+  color: crimson;
+  text-decoration: underline;
+}
+
