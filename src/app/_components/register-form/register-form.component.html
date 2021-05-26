@@ -1,0 +1,64 @@
+<div class="register-form-container">
+ <form #registerForm="ngForm" (ngSubmit)="registerFormAction(registerForm)" >
+<table width="100%">
+  <tr>
+    <td></td>
+    <td>
+      <h3>Register Form</h3>
+    </td>
+  </tr>
+  <tr>
+    <td><label>Name:</label></td>
+    <td><input type="text" name="Name" id="Name" #Name="ngModel" [(ngModel)]="model.Name"></td>
+    <td><span class="validation" style="visibility: hidden;">!</span></td>
+  </tr>
+  <tr>
+    <td><label>LastName:</label></td>
+    <td><input type="text" name="LastName" id="LastName" #LastName="ngModel" [(ngModel)]="model.LastName"></td>
+    <td><span class="validation" style="visibility: hidden;">!</span></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>
+      <div class="search_categories">
+        <div class="select">
+          <select name="CityId" id="CityId" #Categories="ngModel" [(ngModel)]="model.Categories" >
+            <optgroup label="" *ngFor="let city of registerFormViewModel.Cities">
+              <option value="{{city.Id}}" selected="selected">{{city.Title}}</option>
+            </optgroup>
+          </select>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label>Gender:</label>
+    </td>
+    <td>
+      <div>
+        <label  class="l-radio" *ngFor="let gender of registerFormViewModel.Genders">
+          <input type="radio"   name="Gender" tabindex="1" value="{{gender.Id}}" #Gender="ngModel"  [(ngModel)]="model.Gender">
+          <span>{{gender.Title}}</span>
+        </label>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>
+      <textarea id="Description" name="Description" #Description="ngModel"  [(ngModel)]="model.Description" ></textarea>
+    </td>
+    <td><span class="validation">!</span></td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>
+      <input type="submit" value="Register">
+    </td>
+  </tr>
+</table>
+</form>
+</div>
+

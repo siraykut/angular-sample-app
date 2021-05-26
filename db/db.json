@@ -14,6 +14,25 @@
     {"Id": 3, "NewsId":2 ,"Email": "acaliskan@live.com","Comment": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham."},
     {"Id": 4, "NewsId":3 ,"Email": "acaliskan@live.com","Comment": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham."},
     {"Id": 5, "NewsId":1 ,"Email": "acaliskan@live.com","Comment": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham."}
+  ],
+  "Members":
+  [
+    {"Id": 1, "Name": "Aykut", "LastName": "ÇALIŞKAN","Gender": "Male", "Description": "Bla bla"},
+    {"Id": 2, "Name": "Aykut", "LastName": "ÇALIŞKAN","Gender": "Male", "Description": "Bla bla"},
+    {"Id": 3, "Name": "Aykut", "LastName": "ÇALIŞKAN","Gender": "Male", "Description": "Bla bla"}
+  ],
+  "Genders":
+  [
+    {"Id": 1, "Title": "Male"},
+    {"Id": 2, "Title": "Female"},
+    {"Id": 3, "Title": "Other"}
+  ] ,
+  "Cities":
+  [
+    {"Id": 1, "Title": "İstanbul"},
+    {"Id": 2, "Title": "Ankara"},
+    {"Id": 3, "Title": "İzmir"},
+    {"Id": 4, "Title": "Antalya"}
   ]
 }
 

@@ -7,10 +7,11 @@ import {HttpClientModule} from '@angular/common/http';
 import { NewsDetailComponent } from './_components/news-detail/news-detail.component';
 import { HeaderComponent } from './_components/header/header.component';
 import { CommentsComponent } from './_components/comments/comments.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { NewsListComponent } from './_components/news-list/news-list.component';
 import {NgxSpinnerModule} from 'ngx-spinner';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { RegisterFormComponent } from './_components/register-form/register-form.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     NewsDetailComponent,
     HeaderComponent,
     CommentsComponent,
-    NewsListComponent
+    NewsListComponent,
+    RegisterFormComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     HttpClientModule,
     FormsModule,
     NgxSpinnerModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
