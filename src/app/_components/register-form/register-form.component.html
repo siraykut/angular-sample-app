@@ -1,12 +1,8 @@
 <div class="register-form-container">
- <form #registerForm="ngForm" (ngSubmit)="registerFormAction(registerForm)" >
+  <h3 class="form-header-container">Register Form</h3>
+  <form #registerForm="ngForm" (ngSubmit)="registerFormAction(registerForm)" >
 <table width="100%">
-  <tr>
-    <td></td>
-    <td>
-      <h3>Register Form</h3>
-    </td>
-  </tr>
+
   <tr>
     <td><label>Name:</label></td>
     <td><input type="text" name="Name" id="Name" #Name="ngModel" [(ngModel)]="model.Name"></td>

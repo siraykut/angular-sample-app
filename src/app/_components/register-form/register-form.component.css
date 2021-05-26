@@ -126,5 +126,11 @@ body {
   border-radius: 4px;
   background-color: #f8f8f8;
 }
+.form-header-container{
+  width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 3rem;
+}
 
 
